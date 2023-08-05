@@ -1,0 +1,87 @@
+
+/* .box { */
+    /* height: 50px;
+    width: 50px; */
+    /* background-color: red;  */
+    /* transition-property: width height;
+    transition-duration: 2s; */
+    /* transition-delay: 1s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition: width 2s ease-in, height 2s ease-out, background-color 2s ease-in; */
+
+/* } */
+/* .box:hover {
+    width: 500px;
+    background-color: blue;
+    height: 500px;
+} */
+
+/* .click {
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    transition: background-color 1s ease-out;
+} */
+/* .click:hover {
+    background-color: aqua;
+} */
+
+
+/* Animations */
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-fill-mode: reverse;
+}
+@keyframes test {
+    /* from {
+        background-color: purple;
+        transform: rotate(0deg);
+        height: 100px;
+        width: 100px;
+    }
+    to {
+       
+        background-color: yellow;
+        transform: rotate(180deg);
+        height: 300px;
+        width: 300px;
+    } */
+
+    0% {
+        background-color: purple;
+    }
+    25% {
+        background-color: green;
+    } 
+    50% {
+        background-color: red;
+    }
+    75% {
+        background-color: goldenrod;
+    }
+    100% {
+        background-color: chartreuse;
+    }
+
+
+}
+
+/* media query */
+body {
+    background-color: red;
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-color: blue;
+    }
+}
